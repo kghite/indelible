@@ -10,10 +10,8 @@ use crate::app::App;
 
 /// Renders the user interface widgets.
 pub fn render<B: Backend>(app: &mut App, frame: &mut Frame<'_, B>) {
-    // This is where you add new widgets.
-    // See the following resources:
-    // - https://docs.rs/ratatui/latest/ratatui/widgets/index.html
-    // - https://github.com/ratatui-org/ratatui/tree/master/examples
+    let foreground = if app.light_mode { Color::Black } else { Color::Cyan };
+    let background = if app.light_mode { Color::Cyan } else { Color::Black };
     frame.render_widget(
         Paragraph::new(format!(
             "This is a tui template.\n\
@@ -24,12 +22,12 @@ pub fn render<B: Backend>(app: &mut App, frame: &mut Frame<'_, B>) {
         ))
         .block(
             Block::default()
-                .title("Template")
+                .title("Indelible")
                 .title_alignment(Alignment::Center)
                 .borders(Borders::ALL)
                 .border_type(BorderType::Rounded),
         )
-        .style(Style::default().fg(Color::Cyan).bg(Color::Black))
+        .style(Style::default().fg(foreground).bg(background))
         .alignment(Alignment::Center),
         frame.size(),
     )

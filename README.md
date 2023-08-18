@@ -2,7 +2,10 @@
 
 <img src="./static/loop.png" alt="TFKT Logo" width="20%">
 
-**Update the status of your daily habits in a rich terminal UI until it locks in at the end of the day**
+## Indelible
+
+**A permanent record habit tracker - update the status of your daily habits in a rich terminal UI until it locks 
+in at the end of the day**
 
 [📑 Usage](#usage) &nbsp; [🛠️ Install](#installation) &nbsp; [📜 License](#license)
 

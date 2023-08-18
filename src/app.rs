@@ -10,6 +10,8 @@ pub struct App {
     pub running: bool,
     /// counter
     pub counter: u8,
+    /// Light/dark mode
+    pub light_mode: bool,
 }
 
 impl Default for App {
@@ -17,6 +19,7 @@ impl Default for App {
         Self {
             running: true,
             counter: 0,
+            light_mode: false, // TODO: convert to config
         }
     }
 }
@@ -45,5 +48,9 @@ impl App {
         if let Some(res) = self.counter.checked_sub(1) {
             self.counter = res;
         }
+    }
+
+    pub fn toggle_mode(&mut self) {
+        self.light_mode = !self.light_mode;
     }
 }
