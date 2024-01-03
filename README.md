@@ -1,29 +1,19 @@
 <div align="center">
 
-<img src="./static/loop.png" alt="TFKT Logo" width="20%">
+<h1 style="color:#267E5C">Indelible</h1>
 
-## Indelible
-
-**A permanent record habit tracker - update the status of your daily habits in a rich terminal UI until it locks 
+**A permanent record habit tracker - update the status of your daily habits in a minimal UI until it locks 
 in at the end of the day**
 
-[📑 Usage](#usage) &nbsp; [🛠️ Install](#installation) &nbsp; [📜 License](#license)
+[✒️ Go To Indelible](#site-link) &nbsp; [📑 Usage](#usage) &nbsp; [🛠️ Development](#installation)
 
 </div>
 
 ---
 
+## Site Link
+
 ## Usage
 
-## Installation
+## Development
 
-## License
-
-This project is licensed under either of
-
- * Apache License, Version 2.0, ([LICENSE-APACHE](LICENSE-APACHE) or
-   http://www.apache.org/licenses/LICENSE-2.0)
- * MIT license ([LICENSE-MIT](LICENSE-MIT) or
-   http://opensource.org/licenses/MIT)
-
-at your option.
